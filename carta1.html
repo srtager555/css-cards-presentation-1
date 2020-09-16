@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <title>Css Card</title>
+
+    <style>
+        *{
+            font-family: "Roboto",sans-serif;
+            text-decoration:none;
+            box-sizing:border-box;
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(rgb(49, 49, 49), #222);
+        }
+        .content{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+            width: 100%;
+            margin: 0 auto;
+            height: auto;
+        }
+        .content .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            position: relative;
+
+            width: 350px;
+            height: 520px;
+
+            text-align: center;
+
+            margin: 10px;
+            padding: 20px;
+
+            overflow:hidden;
+        }
+        .content .card h2 {
+            padding: 10px;
+
+            color: #fff;
+            background:#222;
+
+            transform:translateY(150%);
+
+            transition: .2s;
+        }.content .card:hover h2{
+            transform:translateY(0);
+        }
+        .content .card p {
+            padding: 10px;
+
+            opacity: 0;
+            color: #fff;
+            background: #2225;
+
+            transform:translateY(200px);
+
+            transition:.2s;
+        }.content .card:hover p{
+            opacity: 1;
+            transform:translateY(-10px);
+        }
+        .content .card a{
+            padding:10px;
+
+            opacity: 0;
+            color: #f1f1f1;
+            background: #888888;
+
+            transform:translateY(20px);
+
+            transition:.2s;
+            transition-delay: .5s;
+        }.content .card:hover a{
+            opacity: 1;
+            transform:translateY(0);
+        }.content .card a:hover{
+            background: #666666;;
+        } 
+        .content .card img{
+            position: absolute;
+
+            width: 240%;
+
+            transition: 1s;
+        }.content .card:hover img{
+            filter: blur(10px);
+            width: 300%;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="card">
+            <img src="img.jpg" alt="">
+            <h2>Card title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, recusandae. Alias ab magnam,
+                quibusdam temporibus optio nihil animi, a error magni inventore nulla consequatur sequi? Enim illo
+                voluptate dolor? Voluptatum.
+            </p>
+            <a href="#">More Info</a>
+        </div>
+  
+        <div class="card">
+            <img src="img1.jpg" alt="">
+            <h2>Card title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, recusandae. Alias ab magnam,
+                quibusdam temporibus optio nihil animi, a error magni inventore nulla consequatur sequi? Enim illo
+                voluptate dolor? Voluptatum.
+            </p>
+            <a href="#">More Info</a>
+        </div>
+    
+        <div class="card">
+            <img src="img2.jpg" alt="">
+            <h2>Card title</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, recusandae. Alias ab magnam,
+                quibusdam temporibus optio nihil animi, a error magni inventore nulla consequatur sequi? Enim illo
+                voluptate dolor? Voluptatum.
+            </p>
+            <a href="#">More Info</a>
+        </div>
+    </div>
+</body>
+
+</html>
